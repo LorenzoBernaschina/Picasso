@@ -57,7 +57,7 @@ extension Inspector{
     
     
     ///This method manages the shape color in case of some changes in RGB values
-    func didMoveColorSlider(sender: UISlider){
+    @objc func didMoveColorSlider(sender: UISlider){
         
         var redColor = self.shape.shapeColor.components.red
         var greenColor = self.shape.shapeColor.components.green
@@ -89,7 +89,7 @@ extension Inspector{
     }
     
     
-    func colorPressed(sender: UIButton){
+    @objc func colorPressed(sender: UIButton){
         self.shape.shapeColor = sender.backgroundColor!
         
         for i in 0..<self.colorSliders.count{

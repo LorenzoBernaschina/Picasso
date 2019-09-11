@@ -35,7 +35,7 @@ public class Circle: Shape{
     }
     
     //sets the circle path
-    class func path(radius: CGFloat) -> CGMutablePath{
+    class func path(radius: CGFloat) -> CGMutablePath {
         let path: CGMutablePath = CGMutablePath()
         path.addArc(center: CGPoint.zero,
                     radius: radius,

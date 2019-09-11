@@ -31,7 +31,7 @@ class GameViewController: UIViewController{
         
         drawButtons()
         
-        //playBackgroundMusic()
+        playBackgroundMusic()
     }
     
     ///This method sets the parameters of the SKView and adds the scene object to the view
@@ -63,7 +63,7 @@ class GameViewController: UIViewController{
     }
     
     ///This method draws new shapes on the screen when a button is pressed
-    func drawShape(sender: UIButton){
+    @objc func drawShape(sender: UIButton){
         switch sender.tag {
         case 0:
             let color = UIColor(red: 248.0/255.0, green: 231.0/255.0, blue: 28.0/255.0, alpha: 1.0)

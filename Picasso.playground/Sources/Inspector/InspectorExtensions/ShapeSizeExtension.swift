@@ -58,7 +58,7 @@ extension Inspector{
     
     
     ///This method sets the radius of the circle
-    func setCircle(sender: UISlider){
+    @objc func setCircle(sender: UISlider){
         if let circle = self.shape as? Circle{
             circle.radius = CGFloat(sender.value)
         }
@@ -66,7 +66,7 @@ extension Inspector{
     
     
     ///This method sets width and height of the rectangle
-    func setRectangle(sender: UISlider){
+    @objc func setRectangle(sender: UISlider){
         if let rectangle = self.shape as? Rectangle{
             switch sender.tag {
             case 0:
@@ -80,7 +80,7 @@ extension Inspector{
     
     
     ///This method sets width and height of the triangle
-    func setTriangle(sender: UISlider){
+    @objc func setTriangle(sender: UISlider){
         if let triangle = self.shape as? Triangle{
             switch sender.tag {
             case 0:

@@ -12,7 +12,7 @@ extension Inspector{
     
     
     ///This method manages rotation, front/back position and deletion of shapes
-    func buttonPressed(sender: UIButton){
+    @objc func buttonPressed(sender: UIButton){
         
         if (sender.currentImage?.isEqual(UIImage(named: "RotateLeftButton.png")))!{
             self.shape.angle = self.shape.rotateShape(byAngle: 15.0)

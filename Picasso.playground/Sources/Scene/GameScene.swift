@@ -50,7 +50,7 @@ public class GameScene: SKScene{
     }
     
     //to open the inspector
-    func doubleTap(sender: UITapGestureRecognizer){
+    @objc func doubleTap(sender: UITapGestureRecognizer){
         if sender.state == .ended {
             
             var touchLocation: CGPoint = sender.location(in: self.view)
@@ -89,7 +89,7 @@ public class GameScene: SKScene{
 
     
     //to make the selection
-    func dragging(sender: UIPanGestureRecognizer){
+    @objc func dragging(sender: UIPanGestureRecognizer){
         if sender.state == .began{
             self.selectedNodes.removeAll()
             
