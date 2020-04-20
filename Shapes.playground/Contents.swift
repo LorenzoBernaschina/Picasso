@@ -37,8 +37,8 @@ class GameViewController: UIViewController{
     ///This method sets the parameters of the SKView and adds the scene object to the view
     func setSKView(){
         guard let skView = self.view as? SKView else {return}
-        skView.showsFPS = true
-        skView.showsNodeCount = true
+        skView.showsFPS = false
+        skView.showsNodeCount = false
         skView.ignoresSiblingOrder = true
         skView.presentScene(scene)
     }
